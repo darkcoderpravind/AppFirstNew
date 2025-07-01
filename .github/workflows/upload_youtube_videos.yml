@@ -43,8 +43,8 @@ jobs:
           # Define all channels in order of priority
           # Using multiline output format to preserve spaces in channel names
           echo "channels<<EOF" >> $GITHUB_OUTPUT
-          echo "expshorts" >> $GITHUB_OUTPUT
-          echo "ShortsEXpert" >> $GITHUB_OUTPUT
+          echo "MiniMovieVault" >> $GITHUB_OUTPUT
+          echo "FlashFrameFilms" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
           
       - name: Process channels sequentially
@@ -68,8 +68,8 @@ jobs:
             echo "Processing channel: $channel"
             echo "============================================="
             
-            # Generate random number of videos to upload (3-6)
-            NUM_VIDEOS=$((RANDOM % 4 + 3))
+            # Generate random number of videos to upload (6-9)
+            NUM_VIDEOS=$((RANDOM % 4 + 6))
             echo "Will attempt to upload $NUM_VIDEOS videos to $channel"
             
             # Try uploading with multiple attempts if needed
