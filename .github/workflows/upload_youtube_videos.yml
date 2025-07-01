@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt || pip install google-api-python-client google-auth google-auth-oauthlib google-auth-httplib2 httplib2 requests
+          pip install -r requirements.txt || pip install google-api-python-client google-auth google-auth-oauthlib google-auth-httplib2 httplib2 requests pyyaml
 
       - name: Create temp directory
         run: |
@@ -43,8 +43,8 @@ jobs:
           # Define all channels in order of priority
           # Using multiline output format to preserve spaces in channel names
           echo "channels<<EOF" >> $GITHUB_OUTPUT
-          echo "ChhotiKahaniBadiBaat" >> $GITHUB_OUTPUT
-          echo "KahaniChitra" >> $GITHUB_OUTPUT
+          echo "expshorts" >> $GITHUB_OUTPUT
+          echo "ShortsEXpert" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
           
       - name: Process channels sequentially
