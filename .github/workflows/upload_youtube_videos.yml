@@ -43,8 +43,8 @@ jobs:
           # Define all channels in order of priority
           # Using multiline output format to preserve spaces in channel names
           echo "channels<<EOF" >> $GITHUB_OUTPUT
-          echo "MiniMovieVault" >> $GITHUB_OUTPUT
-          echo "FlashFrameFilms" >> $GITHUB_OUTPUT
+          echo "ClipVerse" >> $GITHUB_OUTPUT
+          echo "FlashFrame" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
           
       - name: Process channels sequentially
