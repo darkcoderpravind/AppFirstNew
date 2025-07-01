@@ -31,7 +31,7 @@ from google.auth.transport.requests import Request
 # Constants from Google Drive script
 DRIVE_SHEETS_SCOPES = ['https://www.googleapis.com/auth/drive', 
                        'https://www.googleapis.com/auth/spreadsheets']
-TARGET_FOLDER_NAME = "AllVideos"  # Updated folder name for video uploads
+TARGET_FOLDER_NAME = "All video"  # Updated folder name for video uploads
 DIRECT_FOLDER_MODE = True  # Set to True to process videos directly from the main folder instead of subfolders
 SPREADSHEET_ID = '1sqrNVHGo181vGsl1hF5GPUXiQZBUmC_O0KLNBFdMa9g'  # Updated spreadsheet ID
 SHEET_NAME = 'Sheet1'
@@ -72,7 +72,7 @@ UPLOAD_TRACKING_COLUMNS = [
 def get_google_drive_credentials():
     """Get credentials for Google Drive and Sheets API."""
     # Google Drive link for credentials.json
-    CREDENTIALS_DRIVE_LINK = "https://drive.google.com/file/d/1YtEywz1VR6YMdKmMjwTo2EtDcNjwUVHS/view?usp=drive_link"
+    CREDENTIALS_DRIVE_LINK = "https://drive.google.com/file/d/1iiO_EwYORV77PlyhptYk55aDeQ1SRyTG/view?usp=sharing"
     credentials_file = os.path.join('gd', 'credentials.json')
     
     # Try to download from Google Drive first
@@ -122,8 +122,8 @@ def get_youtube_credentials(channel_id=None, channel_name=None):
     
     # Channel name to Drive file ID mapping
     CHANNEL_DRIVE_LINKS = {
-        "ChhotiKahaniBadiBaat": "https://drive.google.com/file/d/12qZIkIH4mL95gx_JxF-d8upbcIKodITS/view?usp=drive_link",
-        "KahaniChitra": "https://drive.google.com/file/d/1U8d8EA3RlPQ8Jx3Nt-72_TjYNVX-hUvR/view?usp=drive_link"
+        "expshorts": "https://drive.google.com/file/d/1ReHOHYHLasMdNJK-KcvlLZJJmH8NQ0mj/view?usp=sharing",
+        "ShortsEXpert": "https://drive.google.com/file/d/1Ebxm9VMIMot33oJGv4DwAkL1k2LaTHHO/view?usp=drive_link"
     }
     
     if not channel_name and not channel_id:
@@ -189,8 +189,8 @@ def list_available_youtube_channels():
     """List all channels that have saved YouTube tokens on Google Drive."""
     # Channel token Google Drive links
     CHANNEL_DRIVE_LINKS = {
-        "ChhotiKahaniBadiBaat": "https://drive.google.com/file/d/12qZIkIH4mL95gx_JxF-d8upbcIKodITS/view?usp=drive_link",
-        "KahaniChitra": "https://drive.google.com/file/d/1U8d8EA3RlPQ8Jx3Nt-72_TjYNVX-hUvR/view?usp=drive_link"
+        "expshorts": "https://drive.google.com/file/d/1ReHOHYHLasMdNJK-KcvlLZJJmH8NQ0mj/view?usp=sharing",
+        "ShortsEXpert": "https://drive.google.com/file/d/1Ebxm9VMIMot33oJGv4DwAkL1k2LaTHHO/view?usp=drive_link"
     }
     
     print("\nAvailable YouTube Channels:")
