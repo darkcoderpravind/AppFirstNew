@@ -122,8 +122,8 @@ def get_youtube_credentials(channel_id=None, channel_name=None):
     
     # Channel name to Drive file ID mapping
     CHANNEL_DRIVE_LINKS = {
-        "ClipVerse": "https://drive.google.com/file/d/189_sNtdvn0QT-hdXmgnmA5C9onxPbHOr/view?usp=sharing",
-        "FlashFrame": "https://drive.google.com/file/d/1WVV7QqsSEsWQSFJd2LoqBlC-Z1REutE0/view?usp=sharing"
+        "ClipVerse": "https://drive.google.com/file/d/1dBsCkxUJvIc2Wh9qXaphy2DHX18Uxr_0/view?usp=drive_link",
+        "FlashFrame": "https://drive.google.com/file/d/1H0mW2srporpQIZvWNWsCjNLJrqEmPE0U/view?usp=drive_link"
     }
     
     if not channel_name and not channel_id:
@@ -189,8 +189,8 @@ def list_available_youtube_channels():
     """List all channels that have saved YouTube tokens on Google Drive."""
     # Channel token Google Drive links
     CHANNEL_DRIVE_LINKS = {
-        "ClipVerse": "https://drive.google.com/file/d/189_sNtdvn0QT-hdXmgnmA5C9onxPbHOr/view?usp=sharing",
-        "FlashFrame": "https://drive.google.com/file/d/1WVV7QqsSEsWQSFJd2LoqBlC-Z1REutE0/view?usp=sharing"
+        "ClipVerse": "https://drive.google.com/file/d/1dBsCkxUJvIc2Wh9qXaphy2DHX18Uxr_0/view?usp=drive_link",
+        "FlashFrame": "https://drive.google.com/file/d/1H0mW2srporpQIZvWNWsCjNLJrqEmPE0U/view?usp=drive_link"
     }
     
     print("\nAvailable YouTube Channels:")
