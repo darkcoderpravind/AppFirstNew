@@ -6,8 +6,8 @@ on:
   
   # Daily scheduled runs
   schedule:
-    # Run daily at 1 AM UTC (01:00)
-    - cron: '0 1 * * *'
+    # Run daily at 12 AM UTC (00:00) - Midnight
+    - cron: '0 0 * * *'
 
 # This workflow handles anime content uploads for educational purposes only
 jobs:
@@ -43,8 +43,10 @@ jobs:
           # Define all channels in order of priority
           # Using multiline output format to preserve spaces in channel names
           echo "channels<<EOF" >> $GITHUB_OUTPUT
-          echo "ClipVerse" >> $GITHUB_OUTPUT
-          echo "FlashFrame" >> $GITHUB_OUTPUT
+          echo "TinyTrailblazers" >> $GITHUB_OUTPUT
+          echo "MagicMapTales" >> $GITHUB_OUTPUT
+          echo "KidVentureQuest11" >> $GITHUB_OUTPUT
+          echo "KidVentureQuest" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
           
       - name: Process channels sequentially
@@ -68,8 +70,8 @@ jobs:
             echo "Processing channel: $channel"
             echo "============================================="
             
-            # Generate random number of videos to upload (6-9)
-            NUM_VIDEOS=$((RANDOM % 4 + 6))
+            # Generate random number of videos to upload (3-5)
+            NUM_VIDEOS=$((RANDOM % 3 + 3))
             echo "Will attempt to upload $NUM_VIDEOS videos to $channel"
             
             # Try uploading with multiple attempts if needed
@@ -121,7 +123,7 @@ jobs:
             
             # Add a delay between channels to avoid rate limits
             echo "Waiting before processing next channel..."
-            sleep $(( RANDOM % 90 + 60 ))  # Random delay between 60-150 seconds
+            sleep $(( RANDOM % 90 + 20 ))  # Random delay between 20-110 seconds
           done
           
           # Summary
