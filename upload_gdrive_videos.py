@@ -31,7 +31,7 @@ from google.auth.transport.requests import Request
 # Constants from Google Drive script
 DRIVE_SHEETS_SCOPES = ['https://www.googleapis.com/auth/drive', 
                        'https://www.googleapis.com/auth/spreadsheets']
-TARGET_FOLDER_NAME = "All video"  # Updated folder name for video uploads
+TARGET_FOLDER_NAME = "Short"  # Updated folder name for video uploads
 DIRECT_FOLDER_MODE = True  # Set to True to process videos directly from the main folder instead of subfolders
 SPREADSHEET_ID = '1sqrNVHGo181vGsl1hF5GPUXiQZBUmC_O0KLNBFdMa9g'  # Updated spreadsheet ID
 SHEET_NAME = 'Sheet1'
@@ -72,7 +72,7 @@ UPLOAD_TRACKING_COLUMNS = [
 def get_google_drive_credentials():
     """Get credentials for Google Drive and Sheets API."""
     # Google Drive link for credentials.json
-    CREDENTIALS_DRIVE_LINK = "https://drive.google.com/file/d/1XmQHmsYaN_YkYaOhoHXZCTj_eC6OQUjO/view?usp=drive_link"
+    CREDENTIALS_DRIVE_LINK = "https://drive.google.com/file/d/1ge98iXWeo3D0uHJlEfFHqulb9wQmqF8X/view?usp=sharing"
     credentials_file = os.path.join('gd', 'credentials.json')
     
     # Try to download from Google Drive first
@@ -122,8 +122,10 @@ def get_youtube_credentials(channel_id=None, channel_name=None):
     
     # Channel name to Drive file ID mapping
     CHANNEL_DRIVE_LINKS = {
-        "ClipVerse": "https://drive.google.com/file/d/1dBsCkxUJvIc2Wh9qXaphy2DHX18Uxr_0/view?usp=drive_link",
-        "FlashFrame": "https://drive.google.com/file/d/1H0mW2srporpQIZvWNWsCjNLJrqEmPE0U/view?usp=drive_link"
+        "TinyTrailblazers": "https://drive.google.com/file/d/1plG6WbpJwRdnf_aUFzeKzDlT3B5_Hng0/view?usp=sharing",
+        "MagicMapTales": "https://drive.google.com/file/d/14WiE14dAoNE4QocoCh7ZSm8OAvjLQLIK/view?usp=sharing",
+        "KidVentureQuest11": "https://drive.google.com/file/d/1mlIUPcYud5h1uLGUlgotyFsx5d8Uy-y0/view?usp=sharing",
+        "KidVentureQuest": "https://drive.google.com/file/d/1W4zr25_0DMVybQhvzFbi6RvpTsjN9G68/view?usp=sharing"
     }
     
     if not channel_name and not channel_id:
@@ -189,8 +191,10 @@ def list_available_youtube_channels():
     """List all channels that have saved YouTube tokens on Google Drive."""
     # Channel token Google Drive links
     CHANNEL_DRIVE_LINKS = {
-        "ClipVerse": "https://drive.google.com/file/d/1dBsCkxUJvIc2Wh9qXaphy2DHX18Uxr_0/view?usp=drive_link",
-        "FlashFrame": "https://drive.google.com/file/d/1H0mW2srporpQIZvWNWsCjNLJrqEmPE0U/view?usp=drive_link"
+        "TinyTrailblazers": "https://drive.google.com/file/d/1plG6WbpJwRdnf_aUFzeKzDlT3B5_Hng0/view?usp=sharing",
+        "MagicMapTales": "https://drive.google.com/file/d/14WiE14dAoNE4QocoCh7ZSm8OAvjLQLIK/view?usp=sharing",
+        "KidVentureQuest11": "https://drive.google.com/file/d/1mlIUPcYud5h1uLGUlgotyFsx5d8Uy-y0/view?usp=sharing",
+        "KidVentureQuest": "https://drive.google.com/file/d/1W4zr25_0DMVybQhvzFbi6RvpTsjN9G68/view?usp=sharing"
     }
     
     print("\nAvailable YouTube Channels:")
