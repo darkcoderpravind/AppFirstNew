@@ -46,7 +46,6 @@ jobs:
           echo "TinyTrailblazers" >> $GITHUB_OUTPUT
           echo "MagicMapTales" >> $GITHUB_OUTPUT
           echo "KidVentureQuest11" >> $GITHUB_OUTPUT
-          echo "KidVentureQuest" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
           
       - name: Process channels sequentially
