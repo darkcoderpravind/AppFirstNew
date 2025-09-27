@@ -122,10 +122,10 @@ def get_youtube_credentials(channel_id=None, channel_name=None):
     
     # Channel name to Drive file ID mapping
     CHANNEL_DRIVE_LINKS = {
-        "TinyTrailblazers": "https://drive.google.com/file/d/1plG6WbpJwRdnf_aUFzeKzDlT3B5_Hng0/view?usp=sharing",
-        "MagicMapTales": "https://drive.google.com/file/d/14WiE14dAoNE4QocoCh7ZSm8OAvjLQLIK/view?usp=sharing",
-        "KidVentureQuest11": "https://drive.google.com/file/d/1mlIUPcYud5h1uLGUlgotyFsx5d8Uy-y0/view?usp=sharing",
-        "KidVentureQuest": "https://drive.google.com/file/d/1W4zr25_0DMVybQhvzFbi6RvpTsjN9G68/view?usp=sharing"
+        "TinyTrailblazers": "https://drive.google.com/file/d/1Oqk5PBmgzEmZLnkEPGH96apiD6AxJYYO/view?usp=sharing",
+        "MagicMapTales": "https://drive.google.com/file/d/1gbD3ptmIyF7fRMwTmEAtOL1ORiIqHBnc/view?usp=sharing",
+        "KidVentureQuest11": "https://drive.google.com/file/d/1bbCiHfsTa-c0ng6XPQNMcglOoojk8XZR/view?usp=sharing",
+        
     }
     
     if not channel_name and not channel_id:
@@ -191,10 +191,9 @@ def list_available_youtube_channels():
     """List all channels that have saved YouTube tokens on Google Drive."""
     # Channel token Google Drive links
     CHANNEL_DRIVE_LINKS = {
-        "TinyTrailblazers": "https://drive.google.com/file/d/1plG6WbpJwRdnf_aUFzeKzDlT3B5_Hng0/view?usp=sharing",
-        "MagicMapTales": "https://drive.google.com/file/d/14WiE14dAoNE4QocoCh7ZSm8OAvjLQLIK/view?usp=sharing",
-        "KidVentureQuest11": "https://drive.google.com/file/d/1mlIUPcYud5h1uLGUlgotyFsx5d8Uy-y0/view?usp=sharing",
-        "KidVentureQuest": "https://drive.google.com/file/d/1W4zr25_0DMVybQhvzFbi6RvpTsjN9G68/view?usp=sharing"
+        "TinyTrailblazers": "https://drive.google.com/file/d/1Oqk5PBmgzEmZLnkEPGH96apiD6AxJYYO/view?usp=sharing",
+        "MagicMapTales": "https://drive.google.com/file/d/1gbD3ptmIyF7fRMwTmEAtOL1ORiIqHBnc/view?usp=sharing",
+        "KidVentureQuest11": "https://drive.google.com/file/d/1bbCiHfsTa-c0ng6XPQNMcglOoojk8XZR/view?usp=sharing",
     }
     
     print("\nAvailable YouTube Channels:")
