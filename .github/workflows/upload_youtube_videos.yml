@@ -1,4 +1,4 @@
-name: Daily YouTube Video Uploads
+name: Testtt
 
 on:
   # Allow manual runs from the GitHub UI
@@ -12,7 +12,7 @@ on:
 # This workflow handles anime content uploads for educational purposes only
 jobs:
   upload-videos:
-    name: Upload Videos to YouTube Channels
+    name: Testtt
     runs-on: ubuntu-latest
     timeout-minutes: 300  # 5 hour execution limit for more videos
     
@@ -43,9 +43,9 @@ jobs:
           # Define all channels in order of priority
           # Using multiline output format to preserve spaces in channel names
           echo "channels<<EOF" >> $GITHUB_OUTPUT
-          echo "TinyTrailblazers" >> $GITHUB_OUTPUT
-          echo "MagicMapTales" >> $GITHUB_OUTPUT
           echo "KidVentureQuest11" >> $GITHUB_OUTPUT
+          echo "MagicMapTales" >> $GITHUB_OUTPUT
+          echo "TinyTrailblazers" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
           
       - name: Process channels sequentially
